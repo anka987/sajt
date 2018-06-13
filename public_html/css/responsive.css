@@ -1,0 +1,151 @@
+@media(min-width:576px){
+
+    .header-user a{
+        display: initial;
+        text-align: initial;
+    }
+
+    .header-user a:first-of-type{
+        padding-right: 25px;
+    }
+
+}
+
+@media(min-width:768px){
+
+    .header-top li{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-contact p{
+        padding: 0 15px;
+        border-right: 1px solid #161616;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    .header-contact p:last-of-type{
+        border-right: none;
+    }
+
+    .header-user a:first-of-type{
+        padding-right: 35px;
+    }
+
+}
+
+
+
+
+@media(min-width:992px){
+
+    header{
+        position: relative;
+    }
+
+    .header-bottom .navbar{
+        position: initial !important;
+    }
+
+    .shop{
+        order: 1;
+    }
+
+    .header-bottom .navbar-brand img{
+        width: 90%;
+    }
+
+    .purity-packages-dropdown,
+    .shop-products-dropdown{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 106.967px;
+        background: #fff;
+        padding: 20px;
+        max-height: calc(100vh - 111px);
+        z-index: 20;
+    }
+
+    .purity-packages-dropdown li a:first-of-type{
+        position: relative;
+    }
+
+    .purity-packages-dropdown li:hover a:first-of-type:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255,255,255,0.64);
+        background-size: cover;
+    }
+
+    .purity-packages-dropdown li h1{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        display: none;
+        width: 100%;
+    }
+
+    .purity-packages-dropdown li:hover h1{
+        display: block;
+        z-index: 10;
+    }
+
+    .search-form{
+        display: none;
+        width: 0px;
+        overflow: hidden;
+        opacity: 0;
+        transition: 1s ease;
+
+    }
+    .search-form.open-search{
+        width: 250px;
+        overflow: hidden;
+        opacity: 1;
+        display: flex;
+        z-index: 20;
+        position: absolute;
+        right: 100%;
+    }
+
+    .show-search{
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 18px;
+    }
+
+    .shop{
+        position: relative;
+        top: -3px;
+        border-left: 1px solid #192024;
+    }
+
+    .navbar-nav li:last-of-type{
+        order: 0;
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .header-user a:first-of-type{
+        padding-right: 45px;
+    }
+
+    .header-bottom .navbar-brand{
+        margin-right: 100px;
+    }
+
+    .header-bottom .navbar-brand img{
+        width: 100%;
+    }
+
+}
