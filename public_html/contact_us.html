@@ -307,7 +307,7 @@
                                     <div class="error"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email"  name="email"  value="" class="form-control" placeholder="Email*">
+                                    <input type="email"  name="email2"  value="" class="form-control" placeholder="Email*">
                                     <div class="error"></div>
                                 </div>
                                 <div class="form-group">
@@ -472,13 +472,17 @@
                             required: true,
                             rangelength: [2, 20]
                         },
-                        email: {
+                        email2: {
                             required: true,
                             email: true
                         },
                         message: {
                             required: true,
                             rangelength: [5, 250]
+                        },
+                        email: {
+                            required: true,
+                            email: true
                         }
 
                     },
@@ -487,13 +491,17 @@
                             required: "Polje *IME je obavezno!",
                             rangelength: "Polje *IME mora da sadrži između 2 i 20 karaktera!"
                         },
-                        email: {
+                        email2: {
                             required: "Polje *EMAIL je obavezno!",
                             email: "Unesite validnu email adresu!"
                         },
                         message: {
                             required: "Polje *PORUKA je obavezno!",
                             rangelength: "Polje *PORUKA mora da sadrži između 5 i 250 karaktera!"
+                        },
+                        email: {
+                            required: "Polje *EMAIL je obavezno!",
+                            email: "Unesite validnu email adresu!"
                         }
                     },
                     errorElement: 'p',
