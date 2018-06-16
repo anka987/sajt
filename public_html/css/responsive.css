@@ -9,6 +9,8 @@
         padding-right: 25px;
     }
 
+
+
 }
 
 @media(min-width:768px){
@@ -32,6 +34,23 @@
     .header-user a:first-of-type{
         padding-right: 35px;
     }
+
+    /*======================================
+    QUESTIONS_ANSWERS / SELLING_PLACES START
+    =========================================*/
+
+    .questions_answers figure,
+    .selling_places figure,
+    .contact_us figure{
+        margin-top: 50px;
+    }
+    
+    .selling_places .address{;
+    margin-bottom: 100px !important;
+}
+    /*======================================
+     QUESTIONS_ANSWERS / SELLING_PLACES END
+    =========================================*/ 
 
 }
 
@@ -131,6 +150,18 @@
     .navbar-nav li:last-of-type{
         order: 0;
     }
+
+    /*======================================
+            FOOTER START
+    =========================================*/
+
+    footer .follow_us{
+        margin-left: 0px;
+    }
+    
+    /*======================================
+            FOOTER end
+    =========================================*/
 
 }
 

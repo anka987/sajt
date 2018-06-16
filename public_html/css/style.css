@@ -42,6 +42,10 @@ form button:focus{
     font-family: 'Gotham-Bold';
 }
 
+.bg-purity{
+    background-color: #F9CED5;
+}
+
 .underline-pink{
     position: relative;
 }
@@ -153,3 +157,275 @@ form button:focus{
 .navbar-nav li:last-of-type{
     order: -1;
 }
+
+
+/*======================================
+        QUESTIONS_ANSWERS START
+=========================================*/
+.questions_answers figure{
+    margin-top: 20px;
+}
+
+.questions_answers h2{
+    color: #161616;	
+    font-family: 'Gotham-Bold';	
+    font-size: 36px;	
+    letter-spacing: -1.28px;	
+    line-height: 43px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+#accordion .card{
+    border: 0px;
+    text-align: center;
+}
+
+#accordion .card .card-header{
+    background: #fff;
+    border: 0px;
+}
+
+#accordion h5{
+    border-bottom: 0.5px solid #F9CED5;
+}
+
+#accordion h5 button{
+    color: #161616;	
+    font-family: 'Gotham-Bold';	
+    font-size: 20px;	
+    letter-spacing: -0.88px;
+    line-height: 32px;
+}
+
+#accordion h5 button:hover{
+    text-decoration: none;
+}
+
+#accordion .card .card-body{
+    color: #161616;	
+    font-family: 'Gotham-Light';	
+    font-size: 18px;	
+    line-height: 33px;	
+    line-height: 23px;
+}
+
+#accordion .card:last-of-type h5{
+    border: none;
+}
+/*======================================
+        QUESTIONS_ANSWERS END
+=========================================*/
+
+
+
+/*======================================
+        SELLING_PLACES START
+=========================================*/
+.selling_places figure{
+    margin-top: 20px;
+}
+
+.selling_places h2{
+    color: #161616;	
+    font-family: 'Gotham-Bold';	
+    font-size: 36px;	
+    letter-spacing: -1.28px;	
+    line-height: 43px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.selling_places .description{
+    color: #161616;	
+    font-family: 'Gotham-Light';	
+    font-size: 18px;	
+    line-height: 33px;	
+    line-height: 23px;
+}
+
+.selling_places .address{
+    color: #161616;
+    font-family: 'Gotham-Bold';
+    font-size: 14px;	
+    letter-spacing: -0.88px;	
+    line-height: 33px;
+    margin-bottom: 50px !important;
+}
+
+.selling_places .stores h5{
+    color: #161616;	
+    font-family: 'Gotham-Bold';
+    font-size: 16px;		
+    letter-spacing: -0.7px;	
+    line-height: 21px;
+}
+
+.selling_places .stores p{
+    color: #161616;
+    font-family: 'Gotham-Light';
+    font-size: 16px;	
+    letter-spacing: -0.7px;	
+    line-height: 21px;
+}
+/*======================================
+        SELLING_PLACES END
+=========================================*/
+
+
+
+/*======================================
+        CONTACT_US START
+=========================================*/
+.contact_us form{
+    margin-bottom: 50px;
+}
+
+.contact_us h2{
+    color: #161616;	
+    font-family: 'Gotham-Bold';
+    font-size: 36px;	
+    letter-spacing: -1.28px;	
+    line-height: 43px;
+}
+
+.contact_us input{
+    padding: 15px;
+}
+
+.contact_us .form-group{
+    margin-bottom: 30px;
+}
+
+.contact_us .form-control{
+    border-radius: 0px;
+    border: 1px solid #000000;
+}
+
+.contact_us textarea{
+    resize: none;
+}
+
+.contact_us .btn{
+    font-family: 'Gotham-Bold';		
+    font-size: 12px;	
+    letter-spacing: -0.06px;	
+    line-height: 14px;
+    padding: 20px 30px;
+    border-radius: 0px;
+}
+
+.contact_us p{
+    color: #161616;	
+    font-family: 'Gotham-Light';	
+    font-size: 18px;	
+    letter-spacing: -0.79px;	
+    line-height: 20px;
+}
+/*======================================
+        CONTACT_US END
+=========================================*/
+
+
+
+
+
+/*======================================
+        FOOTER START
+=========================================*/
+footer .container:first-of-type{
+    padding: 50px 30px;
+}
+
+footer .follow_us{
+    margin-left: 40px;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul li a{
+    color: #161616;	
+    font-family: 'Gotham-Light';	
+    font-size: 14px;	
+    letter-spacing: -0.61px;	
+    line-height: 36px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+footer ul li a:before{
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+}
+
+footer ul li:hover a:before{
+    width: 100%;
+}
+
+footer ul li a:hover{
+    font-weight: bold;
+}
+
+footer .social{
+    padding-bottom: 50px;
+}
+
+footer .social .fa{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+footer .form-group placeholder{
+    color: #161616;	
+    font-family: Gotham;	
+    font-size: 14px;	
+    font-weight: 300;	
+    letter-spacing: -0.61px;	
+    line-height: 36px;
+}
+
+footer .form-control{
+    background-color: #F9CED5;
+    padding: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #000000;
+    border-radius: 0px;
+}
+
+footer .form-group input:focus{
+    background-color: #F9CED5;
+}
+
+footer .newsletter .btn{
+    color: #161616;
+    font-family: 'Gotham-Bold';		
+    font-size: 15px;	
+    letter-spacing: -0.06px;	
+    line-height: 14px;
+    padding: 20px 40px;
+    border: 1px solid #000000;
+    border-radius: 0px;
+}
+
+footer .copyright{
+    font-family: 'Gotham-Light';	
+    font-size: 14px;	
+    letter-spacing: -0.61px;	
+    line-height: 36px;
+    padding: 5px 0px;
+}
+
+/*======================================
+        FOOTER END
+=========================================*/
