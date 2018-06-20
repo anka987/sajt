@@ -31,31 +31,37 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).find('h6').toggleClass('underline-pink');
     });
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+    // TOGGLE BORDER-BOTTOM in ACCORDION
+
+    $('#accordion h5').click(function (e) {
+        e.preventDefault();
+        ($(this)[0]).toggleClass('.accordion-border');
+        console.log($(this)[0]);
+    }
+
+    )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // QUESTINS_ANSWERS
-    
-    
-    
-    
+
+
+
+
 });

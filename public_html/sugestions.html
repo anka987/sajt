@@ -287,8 +287,8 @@
         <!--MAIN START-->
         <main>
 
-            <!-- Section SELLING_PLACES Start -->
-            <section class="selling_places mb-5">
+            <!-- Section SUGESTIONS Start -->
+            <section class="sugestions mb-5">
 
                 <!-- CONTAINER Start-->
                 <div class="container">
@@ -297,45 +297,144 @@
                         <img src="img/logo-part.png" alt="Part of the Logo"/>
                     </figure>
 
-                    <h2 class="text-center p-5">Prodajna mesta</h2>
-                    
-                    <p class='text-center mb-5 description'>
-                        * Mi, ekskluzivni uvoznici, možemo garantovati za kvalitet
-                        i originalno poreklo samo za proizvode kupljene u navedenim prodajnim objektima.
-                    </p>
-                    
-                    <p class="text-center address">
-                        PurityBox Beograd<br>
-                        PurityBox Store, Gospodar Jovanova 47, Beograd +381 11 4030671
-                    </p>
-                    
-                    <div class='row justify-content-center stores'>
-                        <div class="col-md-5 mb-5 mb-md-0">
-                            <h5 class="text-uppercase mb-4">Brendovi za decu</h5>
-                            <p>DexyCo Delta City</p>
-                            <p>DexyCo TC Ušće Beograd</p>
-                            <p>DexyCo TC Big Beograd</p>
-                            <p>DexyCo TC Big Novi Sad</p>
-                            <p>DexyCo Mercator Novi Sad</p>
-                            <p>DexyCo TC Stadion Beograd</p>
-                            <p>DexyCo TC Plaza Kragujevac</p>
-                            <p>DexyCo TC Forum Niš</p>
-                            <p>DexyCo Immo Centar Beograd</p>
-                            <p>DexyCo TC Capitol Park Rakovica Beograd</p>
+                    <h2 class="text-center p-3 mb-0">Već si zavolela PurityBox?</h2>
+
+                    <div class="text-center">
+                        <p class="mb-2">
+                            Ako ti se dopada koncept PurityBox, podeli svoje iskustvo sa prijateljicama.
+                        </p>
+
+                        <p class="mb-2">
+                            Predloži bar jednu, ukoliko ona kupi mesečni box, tebi će biti
+                            dodeljeno 50 bodova ili 500 rsd vrednosti u našem shopu.
+                        </p>
+
+                        <p class="mb-5">
+                            I tako za svaku sledeću predloženu prijateljicu...
+                        </p>
+                    </div>
+                    <form class="sugestions-form" role="form" method="get" action="">
+                        <div class="row justify-content-center">
+                            <div class="col-md-7 col-lg-6 col-xl-5">  
+                                <article>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <select name='box' class="form-control">
+                                                    <option value="1">CLASSIC</option>
+                                                    <option value="2">CLASSIC</option>
+                                                    <option value="3">CLASSIC</option>
+                                                </select>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <select name='payment' class="form-control">
+                                                    <option value="1">Način plaćanja: UPLATNICOM</option>
+                                                    <option value="2">Način plaćanja: UPLATNICOM</option>
+                                                    <option value="3">Način plaćanja: UPLATNICOM</option>
+                                                </select>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="text"  name="firstname"  value="" class="form-control" placeholder="Ime osobe kojoj poklanjam članarinu">
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="text"  name="lastname"  value="" class="form-control" placeholder="Prezime osobe kojoj poklanjam članarinu">
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="email"  name="email"  value="" class="form-control" placeholder="Email osobe kojoj poklanjam članarinu">
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="text"  name="street"  value="" class="form-control" placeholder="Adresa osobe kojoj poklanjam članarinu">
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="text"  name="city"  value="" class="form-control" placeholder="Grad osobe kojoj poklanjam članarinu"> 
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="text"  name="postcode"  value="" class="form-control" placeholder="Poštanski broj osobe kojoj poklanjam članarinu"> 
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class='form-group'>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        1 Mesec (2.900,00 RSD)
+                                                    </label>                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        3 Meseca (2.900,00 RSD)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        6 Meseci (2.900,00 RSD)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p class='prices'>*Cene su sa uračunatim PDV-om</p>
+
+                                    <div class="form-group text-center mb-4">
+                                        <button class="btn bg-purity text-uppercase" type="submit">Potvrdi</button>
+                                    </div>
+
+                                </article>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <h5 class="text-uppercase mb-4">Nikel & Sophie la girafe</h5>
-                            <p>Idea Organic Patrijarha Varnave 24, Beograd</p>
-                            <p>Idea Organic Kralja Petra 74, Beograd</p>
-                            <p>Idea Organic Svetogorska 22, Beograd</p>
-                            <p>TC Mercator Beograd</p>
-                            <p>TC Mercator Novi Sad</p>
-                        </div>
+                    </form>
+
+
+
+                    <div class=" text-center">
+
+
+
                     </div>
 
                 </div> <!-- CONTAINER End-->
 
-            </section> <!-- Section SELLING_PLACES End -->
+            </section> <!-- Section SUGESTIONS End -->
 
         </main><!--MAIN END-->
 
@@ -456,6 +555,90 @@
         <script type="text/javascript">
 
             $(function () {
+                $(".sugestions-form").validate({
+                    highlight: function (element) {
+                        $(element).closest('.form-group').addClass("has-danger");
+                        $(element).addClass("form-control-danger");
+                    },
+                    unhighlight: function (element) {
+                        $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+                        $(element).removeClass('form-control-danger').addClass('form-control-success');
+                    },
+                    rules: {
+                        box:{
+                           required: true, 
+                        },
+                        payment:{
+                           required: true, 
+                        },
+                        firstname: {
+                            required: true,
+                            rangelength: [3, 255]
+                        },
+                        lastname: {
+                            required: true,
+                            rangelength: [3, 255]
+                        },
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        street: {
+                            required: true,
+                            rangelength: [3, 255]
+                        },
+                        city: {
+                            required: true,
+                            rangelength: [3, 255]
+                        },
+                        postcode: {
+                            required: true,
+                            minlength: 5
+                        }
+
+                    },
+                    messages: {
+                        box:{
+                           required: "Polje je obavezno!" 
+                        },
+                        payment:{
+                           required: "Polje je obavezno!"
+                        },
+                        firstname: {
+                            required: "Polje *IME je obavezno!",
+                            rangelength: "Polje *IME mora da sadrži između 3 i 255 karaktera!"
+                        },
+                        lastname: {
+                            required: "Polje *PREZIME je obavezno!",
+                            rangelength: "Polje *PREZIME mora da sadrži između 3 i 255 karaktera!"
+                        },
+                        email: {
+                            required: "Polje *EMAIL je obavezno!",
+                            email: "Unesite validnu email adresu!"
+                        },
+                        street: {
+                            required: "Polje *Ulica je obavezno!",
+                            rangelength: "Polje *Ulica mora da sadrži između 3 i 255 karaktera!"
+                        },
+                        city: {
+                            required: "Polje *Grad je obavezno!",
+                            rangelength: "Polje *Grad mora da sadrži između 3 i 255 karaktera!"
+                        },
+                        postcode: {
+                            required: "Polje *Poštanski broj je obavezno!",
+                            minlength: "Polje *Poštanski broj mora da sadrži minimum 5 karaktera!"
+                        }
+
+                    },
+                    errorElement: 'p',
+                    errorPlacement: function (error, element) {
+                        error.appendTo($(element).closest('.form-group').find('.error'));
+                    }
+
+                });
+            });
+
+            $(function () {
                 $(".newsletter-form").validate({
                     highlight: function (element) {
                         $(element).closest('.form-group').addClass("has-danger");
@@ -488,3 +671,5 @@
         </script>
     </body>
 </html>
+
+

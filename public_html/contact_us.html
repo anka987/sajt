@@ -307,7 +307,7 @@
                                     <div class="error"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email"  name="email2"  value="" class="form-control" placeholder="Email*">
+                                    <input type="email"  name="email"  value="" class="form-control" placeholder="Email*">
                                     <div class="error"></div>
                                 </div>
                                 <div class="form-group">
@@ -318,7 +318,7 @@
                                     <textarea name='message' placeholder="Poruka*" class="form-control" rows="8"></textarea>
                                     <div class="error"></div>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group text-center">
                                     <button class="btn bg-purity text-uppercase" type="submit">Pošalji poruku</button>
                                 </div>
                             </form>
@@ -342,8 +342,8 @@
         </main><!--MAIN END-->
 
         <!-- FOOTER Start -->
-        <footer>
-            <div class="container" style="background-color: #F9CED5">
+        <footer style="background-color: #F9CED5">
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
                         <ul>
@@ -420,7 +420,7 @@
 
                             <div class="newsletter">
                                 <p>Prijavi se za Newsletter</p>
-                                <form method="get" action="" class="contact-form" role="form">
+                                <form method="get" action="" class="newsletter-form" role="form">
                                     <div class="form-group">
                                         <input type="email" name="email" value="" placeholder="Email" class="form-control">
                                         <div class="error"></div>
@@ -435,7 +435,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container copyright" style="background-color: #000">
+            <div class="copyright" style="background-color: #000">
                 <p class="text-center text-white mb-0">&copy; 2018. puritybox.rs</p>
             </div>
         </footer><!-- FOOTER End -->
@@ -472,17 +472,13 @@
                             required: true,
                             rangelength: [2, 20]
                         },
-                        email2: {
+                        email: {
                             required: true,
                             email: true
                         },
                         message: {
                             required: true,
                             rangelength: [5, 250]
-                        },
-                        email: {
-                            required: true,
-                            email: true
                         }
 
                     },
@@ -491,14 +487,41 @@
                             required: "Polje *IME je obavezno!",
                             rangelength: "Polje *IME mora da sadrži između 2 i 20 karaktera!"
                         },
-                        email2: {
+                        email: {
                             required: "Polje *EMAIL je obavezno!",
                             email: "Unesite validnu email adresu!"
                         },
                         message: {
                             required: "Polje *PORUKA je obavezno!",
                             rangelength: "Polje *PORUKA mora da sadrži između 5 i 250 karaktera!"
-                        },
+                        }
+                    },
+                    errorElement: 'p',
+                    errorPlacement: function (error, element) {
+                        error.appendTo($(element).closest('.form-group').find('.error'));
+                    }
+
+                });
+            });
+            
+            
+            $(function () {
+                $(".newsletter-form").validate({
+                    highlight: function (element) {
+                        $(element).closest('.form-group').addClass("has-danger");
+                        $(element).addClass("form-control-danger");
+                    },
+                    unhighlight: function (element) {
+                        $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+                        $(element).removeClass('form-control-danger').addClass('form-control-success');
+                    },
+                    rules: {
+                        email: {
+                            required: true,
+                            email: true
+                        }
+                    },
+                    messages: {
                         email: {
                             required: "Polje *EMAIL je obavezno!",
                             email: "Unesite validnu email adresu!"

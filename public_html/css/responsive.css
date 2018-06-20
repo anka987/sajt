@@ -14,6 +14,9 @@
 }
 
 @media(min-width:768px){
+    html{
+        font-size: 16px;
+    }
 
     .header-top li{
         display: flex;
@@ -41,13 +44,62 @@
 
     .questions_answers figure,
     .selling_places figure,
-    .contact_us figure{
+    .contact_us figure,
+    .sign_up figure,
+    .registration fugure,
+    .sugestions figure{
         margin-top: 50px;
     }
+
+    .questions_answers h2,
+    .selling_places h2,
+    .contact_us h2,
+    .sign_up h2,
+    .registration h2,
+    .sugestions h2{	
+        font-size: 36px;
+    }
+
+    #accordion h5 button{	
+        font-size: 20px;
+    }
+
+    .selling_places .address{
+        margin-bottom: 100px !important;
+    }
     
-    .selling_places .address{;
-    margin-bottom: 100px !important;
-}
+    .selling_places .stores h5{
+        font-size: 18px;
+    }
+    
+    .contact_us p{
+        font-size: 18px;
+    }
+    
+    .sign_up .forgotten_pass,
+    .sign_up .log_in,
+    .sign_up .account p,
+    .sign_up .account li,
+    .registration p{
+        font-size: 16px;
+    }
+    
+    .form-control::placeholder{
+        font-size: 16px;
+    }
+    
+    .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-size: 16px;
+    }
+    
+    .form-control::-ms-input-placeholder { /* Microsoft Edge */
+        font-size: 16px;
+    }
+    
+    .sugestions p{
+        font-size: 18px;
+    }
+    
     /*======================================
      QUESTIONS_ANSWERS / SELLING_PLACES END
     =========================================*/ 
@@ -158,7 +210,7 @@
     footer .follow_us{
         margin-left: 0px;
     }
-    
+
     /*======================================
             FOOTER end
     =========================================*/
