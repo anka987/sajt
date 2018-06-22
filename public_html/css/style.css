@@ -9,6 +9,7 @@ body{
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Gotham-Bold';
+    color: #161616;
 }
 
 img{
@@ -66,6 +67,23 @@ form button:focus{
 
 .opened{
     display: block !important;
+}
+
+ol, ul, dl {
+    margin: 0;
+}
+
+.section-decoration {
+    background: #fff url("../img/logo-part.png") no-repeat center top;
+}
+
+p.lead {
+    margin-bottom: 30px;
+}
+
+.form-control{
+    border-radius: 0px;
+    border: 1px solid #000000;
 }
 
 .form-control::placeholder {
@@ -190,6 +208,202 @@ form button:focus{
 
 
 /*======================================
+        BUTTONS
+=========================================*/
+
+.btn {
+    border-radius: 0;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-family: 'Gotham-Bold';
+    font-size: 12px;
+}
+
+.btn-purity-white {
+    background-color: #fff;
+    border-color: #000;
+}
+
+.btn-purity-transparent {
+    background-color: rgba(255,255,255,0);
+    border-color: #000;
+}
+
+
+/*======================================
+        SLIDERS START
+=========================================*/
+.main-slider-wrapper{
+    background: #fff url("../img/slider-img.png") no-repeat center center;
+    background-size: cover; 
+    height: 500px;
+}
+
+.freckles-wrapper{
+    background: #fff url("../img/freckles-slider.png") no-repeat center center;
+    background-size: cover; 
+    height: 500px;
+}
+
+.gel-wrapper{
+    background: #fff url("../img/gel-slider.png") no-repeat center center;
+    background-size: cover; 
+    height: 500px;
+}
+
+.girafe-wrapper{
+    background: #fff url("../img/girafe-slider.png") no-repeat center center;
+    background-size: cover; 
+    height: 500px;
+}
+
+.authors-slider,
+.freckles-slider,
+.gel-slider,
+.girafe-slider{
+    background-color: rgba(255,255,255,0.85);
+    padding: 20px 60px;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.owl-next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.owl-carousel .owl-nav {
+    margin: 0;
+}
+
+.owl-carousel .owl-nav [class*="owl-"] {
+    background: none;
+    color: #161616;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+    padding: 0;
+    transition: ease 0.1s;
+    font-size: 14px;
+}
+
+.owl-carousel .owl-nav [class*="owl-"]:hover {
+    background: none;
+    color: #F9CED5;
+}
+/*======================================
+        SLIDERS END
+=========================================*/
+
+
+/*======================================
+        HOME INFO
+=========================================*/
+
+.home-info > div > div > div > div{
+    padding: 20px 0;
+    border-bottom: 1px solid #161616;
+}
+
+.home-info > div > div > div:last-child > div{
+    border-right: none;
+}
+
+.home-info a{
+    display: block;
+    transition: ease-in-out 0.2s;
+}
+
+.home-info a:hover{
+    display: block;
+    -ms-transform: scale(1.15, 1.15); /* IE 9 */
+    -webkit-transform: scale(1.15, 1.15); /* Safari */
+    transform: scale(1.15, 1.15);
+}
+
+.buy-box {
+    background: #fff url("../img/background-images/bg-img-1.png") no-repeat center center;
+}
+
+.how-it-function {
+    background: #fff url("../img/background-images/bg-img-2.png") no-repeat center 70px;      
+}
+
+.present-and-earn {
+    background: #fff url("../img/background-images/bg-img-3.png") no-repeat center center;
+}
+
+.home-info p {
+    margin: 0;
+}
+
+p.buy {
+    text-transform: uppercase;
+    font-size: 48px;
+    margin: 0;
+    line-height: 50px;
+}
+
+p.box {
+    font-family: 'Gotham-Bold';
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+p.how {
+    font-family: 'Gotham-Bold';
+    line-height: 52px;
+    font-size: 52px;
+    font-weight: bold;
+    margin: 0;
+}
+
+p.function {
+    text-transform: lowercase;
+    font-size: 27px;
+    margin: 0;
+}
+
+p.gift {
+    text-transform: uppercase;
+    font-size: 38px;
+    margin: 0;
+    line-height: 50px;
+}
+
+p.earn {
+    font-family: 'Gotham-Bold';
+    text-transform: lowercase;
+    line-height: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*======================================
+        SURPRISE START
+=========================================*/
+
+.surprise h5 {
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+
+
+
+
+/*======================================
         QUESTIONS_ANSWERS START
 =========================================*/
 .questions_answers figure{
@@ -197,7 +411,6 @@ form button:focus{
 }
 
 .questions_answers h2{
-    color: #161616;	
     font-size: 30px;	
     letter-spacing: -1.28px;	
     line-height: 43px;
@@ -259,8 +472,7 @@ form button:focus{
     margin-top: 20px;
 }
 
-.selling_places h2{
-    color: #161616;	
+.selling_places h2{	
     font-size: 30px;	
     letter-spacing: -1.28px;	
     line-height: 43px;
@@ -283,7 +495,6 @@ form button:focus{
 }
 
 .selling_places .stores h5{
-    color: #161616;
     font-size: 16px;		
     letter-spacing: -0.7px;	
     line-height: 21px;
@@ -313,7 +524,6 @@ form button:focus{
 }
 
 .contact_us h2{
-    color: #161616;
     font-size: 30px;	
     letter-spacing: -1.28px;	
     line-height: 43px;
@@ -327,22 +537,8 @@ form button:focus{
     margin-bottom: 30px;
 }
 
-.contact_us .form-control{
-    border-radius: 0px;
-    border: 1px solid #000000;
-}
-
 .contact_us textarea{
     resize: none;
-}
-
-.contact_us .btn{
-    font-family: 'Gotham-Bold';		
-    font-size: 12px;	
-    letter-spacing: -0.06px;	
-    line-height: 14px;
-    padding: 20px 30px;
-    border-radius: 0px;
 }
 
 .contact_us p{
@@ -365,8 +561,7 @@ form button:focus{
     margin-top: 20px;
 }
 
-.sign_up h2{
-    color: #161616;	
+.sign_up h2{	
     letter-spacing: -1.28px;	
     line-height: 43px;
 }
@@ -377,20 +572,6 @@ form button:focus{
 
 .sign_up .form-group{
     margin-bottom: 30px;
-}
-
-.sign_up .form-control{
-    border-radius: 0px;
-    border: 1px solid #000000;
-}
-
-.sign_up .btn{
-    font-family: 'Gotham-Bold';		
-    font-size: 12px;	
-    letter-spacing: -0.06px;	
-    line-height: 14px;
-    padding: 20px 40px;
-    border-radius: 0px;
 }
 
 .sign_up .forgotten_pass{
@@ -437,8 +618,7 @@ form button:focus{
     margin-top: 20px;
 }
 
-.registration h2{
-    color: #161616;	
+.registration h2{	
     font-size: 30px;	
     letter-spacing: -1.28px;	
     line-height: 43px;
@@ -452,19 +632,7 @@ form button:focus{
     margin-bottom: 30px;
 }
 
-.registration .form-control{
-    border-radius: 0px;
-    border: 1px solid #000000;
-}
 
-.registration .btn{
-    font-family: 'Gotham-Bold';		
-    font-size: 12px;	
-    letter-spacing: -0.06px;	
-    line-height: 14px;
-    padding: 20px 40px;
-    border-radius: 0px;
-}
 
 .registration .log_in{
     color: #FFFFFF;	
@@ -495,8 +663,7 @@ form button:focus{
     margin-top: 20px;
 }
 
-.sugestions h2{
-    color: #161616;	
+.sugestions h2{	
     font-size: 30px;	
     letter-spacing: -1.28px;	
     line-height: 43px;
@@ -517,11 +684,6 @@ form button:focus{
     margin-bottom: 30px;
 }
 
-.sugestions .form-control{
-    border-radius: 0px;
-    border: 1px solid #000000;
-}
-
 .sugestions .prices{
     color: #161616;	
     font-family: 'Gotham-Light';	
@@ -530,17 +692,120 @@ form button:focus{
     margin-bottom: 30px;
 }
 
-.sugestions .btn{
-    font-family: 'Gotham-Bold';		
-    font-size: 12px;	
-    letter-spacing: -0.06px;	
-    line-height: 14px;
-    padding: 20px 40px;
-    border-radius: 0px;
-}
+
 /*======================================
         SUGESTIONS END
 =========================================*/
+
+
+
+/*======================================
+        LEAVE_COMMENT START
+=========================================*/
+.leave_comment figure{
+    margin-top: 20px;
+}
+
+.leave_comment h2{	
+    font-size: 30px;	
+    letter-spacing: -1.28px;	
+    line-height: 43px;
+}
+
+.leave_comment input{
+    padding: 15px;
+}
+
+.leave_comment p{
+    color: #161616;
+    font-family: 'Gotham-Light';
+    font-size: 14px;	
+    letter-spacing: -0.07px;	
+    line-height: 17px;
+}
+
+.leave_comment .form-group{
+    margin-bottom: 30px;
+}
+
+.example-fontawesome-o{
+    color: red;
+}
+/*======================================
+        LEAVE_COMMENT END
+=========================================*/
+
+
+
+/*======================================
+        INGREDIENTS / DANDRUFF START
+=========================================*/
+.ingredients h3,
+.dandruff h3{
+    color: #161616;	
+    font-size: 24px;	
+    letter-spacing: -0.51px;	
+    line-height: 16px;
+}
+
+.ingredients ul,
+.dandruff ul{
+    list-style: none;
+}
+
+.ingredients ul li,
+.dandruff ul li{
+    margin-bottom: 20px;
+}
+
+.ingredients ul li a,
+.dandruff ul li a{
+    color: #161616;	
+    font-family: 'Gotham-Light';
+    font-size: 14px;		
+    letter-spacing: -0.9px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.ingredients ul li a:hover,
+.ingredients ul li a.active,
+.dandruff ul li a:hover,
+.dandruff ul li a.active{
+    font-weight: bold;
+}
+
+.ingredients ul li a:before,
+.dandruff ul li a:before{
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: #F9CED5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+}
+
+.ingredients ul li:hover a:before,
+.dandruff ul li:hover a:before{
+    width: 100%;
+}
+
+.ingredients p,
+.dandruff p{
+    color: #161616;	
+    font-family: 'Gotham-Light';	
+    letter-spacing: -0.61px;	
+    line-height: 27px;
+}
+/*======================================
+        INGREDIENTS / DANDRUFF END
+=========================================*/
+
+
+
 
 
 

@@ -5,9 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="author" content="Borivoje Skrbina i Anka Markovic-Borak">
-        <meta name="description" content="Puritybox">
-        <meta name="keywords" content="Frontend, HTML5, CSS3, Bootstrap, JS, jQuery">
         <title>PURITY BOX</title>
 
 
@@ -290,8 +287,8 @@
         <!--MAIN START-->
         <main>
 
-            <!-- Section CONTACT_US Start -->
-            <section class="contact_us mb-5">
+            <!-- Section LEAVE_COMMENT Start -->
+            <section class="leave_comment mb-5">
 
                 <!-- CONTAINER Start-->
                 <div class="container">
@@ -300,47 +297,36 @@
                         <img src="img/logo-part.png" alt="Part of the Logo"/>
                     </figure>
 
-                    <h2 class="text-center p-3 mb-4">Kako da nas kontaktirate ili upoznate?</h2>
+                    <h2 class="text-center p-3 mb-4">Ostavi komentar</h2>
 
                     <div class="row justify-content-center">
-                        <div class="col-lg-4">
-                            <form class="contact-form" role="form" method="get" action="">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="raiting">
+                                <p class="mb-5">Oceni proizvod</p>
+                            </div>
+                            <form class="comment-form" role="form" method="get" action="">
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="name" value="" placeholder="Ime i prezime*">
+                                    <input class="form-control" type="text" name="nickname" value="" placeholder="Vaš nadimak*">
                                     <div class="error"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email"  name="email"  value="" class="form-control" placeholder="Email*">
+                                    <input type="text"  name="title"  value="" class="form-control" placeholder="Naslov komentara*">
                                     <div class="error"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text"  name="phoneNumber"  value="" class="form-control" placeholder="Broj telefona">
-                                    <div class="error"></div>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name='message' placeholder="Poruka*" class="form-control" rows="8"></textarea>
+                                    <textarea name='comment' placeholder="Ostavi komentar*" class="form-control" rows="8"></textarea>
                                     <div class="error"></div>
                                 </div>
                                 <div class="form-group text-center">
-                                    <button class="btn bg-purity text-uppercase" type="submit">Pošalji poruku</button>
+                                    <button class="btn bg-purity text-uppercase" type="submit">Postavi komentar</button>
                                 </div>
                             </form>
-                            <div class="text-center">
-                                <p>... ili svratite do nas!</p>
-                                <p>PurityBox</p>
-                                <p>Store Gospodar Jovanova 47, Beograd</p>
-                                <p>+381 11 4030671</p>
-                                <p>+381 63 224 522</p>
-                                <p>office@puritybox.net</p>
-                            </div>
                         </div>
                     </div>
 
-
-
                 </div> <!-- CONTAINER End-->
 
-            </section> <!-- Section CONTACT_US End -->
+            </section> <!-- Section LEAVE_COMMENT End -->
 
         </main><!--MAIN END-->
 
@@ -454,6 +440,7 @@
 
         <!-- CUSTOM PAGE JS -->
         <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="js/jquery.barrating.min.js" type="text/javascript"></script>
 
         <script src="js/main.js" type="text/javascript"></script>
 
@@ -461,7 +448,7 @@
         <script type="text/javascript">
 
             $(function () {
-                $(".contact-form").validate({
+                $(".comment-form").validate({
                     highlight: function (element) {
                         $(element).closest('.form-group').addClass("has-danger");
                         $(element).addClass("form-control-danger");
@@ -471,32 +458,32 @@
                         $(element).removeClass('form-control-danger').addClass('form-control-success');
                     },
                     rules: {
-                        name: {
+                        nickname: {
                             required: true,
                             rangelength: [2, 20]
                         },
-                        email: {
+                        title: {
                             required: true,
-                            email: true
+                            rangelength: [2, 20]
                         },
-                        message: {
+                        comment: {
                             required: true,
                             rangelength: [5, 250]
                         }
 
                     },
                     messages: {
-                        name: {
-                            required: "Polje *IME je obavezno!",
-                            rangelength: "Polje *IME mora da sadrži između 2 i 20 karaktera!"
+                        nickname: {
+                            required: "Polje *NADIMAK je obavezno!",
+                            rangelength: "Polje *NADIMAK mora da sadrži između 2 i 20 karaktera!"
                         },
-                        email: {
-                            required: "Polje *EMAIL je obavezno!",
-                            email: "Unesite validnu email adresu!"
+                        title: {
+                            required: "Polje *NASLOV KOMENTARA je obavezno!",
+                            rangelength: "Polje *NASLOV KOMENTARA mora da sadrži između 2 i 20 karaktera!"
                         },
-                        message: {
-                            required: "Polje *PORUKA je obavezno!",
-                            rangelength: "Polje *PORUKA mora da sadrži između 5 i 250 karaktera!"
+                        comment: {
+                            required: "Polje *KOMENTAR je obavezno!",
+                            rangelength: "Polje *KOMENTAR mora da sadrži između 5 i 250 karaktera!"
                         }
                     },
                     errorElement: 'p',
@@ -506,8 +493,8 @@
 
                 });
             });
-            
-            
+
+
             $(function () {
                 $(".newsletter-form").validate({
                     highlight: function (element) {
@@ -541,3 +528,4 @@
         </script>
     </body>
 </html>
+

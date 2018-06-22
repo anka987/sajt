@@ -9,7 +9,12 @@
         padding-right: 25px;
     }
 
-
+    .authors-slider,
+    .freckles-slider,
+    .gel-slider,
+    .girafe-slider{
+        padding: 20px 80px;
+    }
 
 }
 
@@ -38,16 +43,39 @@
         padding-right: 35px;
     }
 
-    /*======================================
-    QUESTIONS_ANSWERS / SELLING_PLACES START
-    =========================================*/
+    .form-control::placeholder{
+        font-size: 16px;
+    }
 
+    .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-size: 16px;
+    }
+
+    .form-control::-ms-input-placeholder { /* Microsoft Edge */
+        font-size: 16px;
+    }
+
+    .home-info > div > div > div > div{
+        padding: 10px;
+        border-right: 1px solid #161616;
+        border-bottom: none;
+        margin: 20px 0;
+    }
+
+    .how-it-function {
+        background: #fff url("../img/background-images/bg-img-2.png") no-repeat center 58px;      
+    }
+
+    /*======================================
+             FORM SECTIONS START
+    =========================================*/
     .questions_answers figure,
     .selling_places figure,
     .contact_us figure,
     .sign_up figure,
     .registration fugure,
-    .sugestions figure{
+    .sugestions figure,
+    .leave_comment figure{
         margin-top: 50px;
     }
 
@@ -56,7 +84,8 @@
     .contact_us h2,
     .sign_up h2,
     .registration h2,
-    .sugestions h2{	
+    .sugestions h2,
+    .leave_comment h2{	
         font-size: 36px;
     }
 
@@ -67,15 +96,15 @@
     .selling_places .address{
         margin-bottom: 100px !important;
     }
-    
+
     .selling_places .stores h5{
         font-size: 18px;
     }
-    
+
     .contact_us p{
         font-size: 18px;
     }
-    
+
     .sign_up .forgotten_pass,
     .sign_up .log_in,
     .sign_up .account p,
@@ -83,26 +112,32 @@
     .registration p{
         font-size: 16px;
     }
-    
-    .form-control::placeholder{
-        font-size: 16px;
-    }
-    
-    .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-        font-size: 16px;
-    }
-    
-    .form-control::-ms-input-placeholder { /* Microsoft Edge */
-        font-size: 16px;
-    }
-    
+
     .sugestions p{
         font-size: 18px;
     }
-    
+
+    .leave_comment p{
+        font-size: 16px;
+    }
+
     /*======================================
-     QUESTIONS_ANSWERS / SELLING_PLACES END
+              FORM SECTIONS END
     =========================================*/ 
+
+
+
+    /*======================================
+        INGREDIENTS / DANDRUFF START
+    =========================================*/
+    .ingredients p,
+    .dandruff p{
+        font-size: 16px;
+    }
+
+    /*======================================
+            INGREDIENTS / DANDRUFF END
+    =========================================*/
 
 }
 
@@ -203,10 +238,24 @@
         order: 0;
     }
 
+
+
+    /*======================================
+        INGREDIENTS / DANDRUFF START
+    =========================================*/
+    .ingredients ul li a,
+    .dandruff ul li a{
+        font-size: 16px;
+    }
+    /*======================================
+        INGREDIENTS / DANDRUFF END
+    =========================================*/
+
+
+
     /*======================================
             FOOTER START
     =========================================*/
-
     footer .follow_us{
         margin-left: 0px;
     }

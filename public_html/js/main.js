@@ -1,9 +1,8 @@
 $(document).ready(function () {
 
-    // SLIDE UP AND DOWN DROPDOWN LISTS IN NAVIGATION
+// SLIDE UP AND DOWN DROPDOWN LISTS IN NAVIGATION
     $('.has-submenu .nav-link').click(function (e) {
         e.preventDefault();
-
         if ($(this).next('.shop-products-dropdown').hasClass('opened')) {
             $(this).next('.shop-products-dropdown').removeClass('opened');
         } else {
@@ -11,6 +10,7 @@ $(document).ready(function () {
             $(this).next('.shop-products-dropdown').addClass('opened');
         }
     });
+
 
     // HEADER SEARCH SHOW
     $(".show-search").click(function (e) {
@@ -20,48 +20,64 @@ $(document).ready(function () {
     });
 
 
-    // TOGGLE CLASS UNDERLINE PINK
-    $('.shop-products-dropdown li ul li').hover(function (e) {
-        e.preventDefault();
-        $(this).toggleClass('font-bold');
-        $(this).parent().prev().children().toggleClass('underline-pink');
-    });
-
-    $('.gift-dropdown li').hover(function (e) {
-        e.preventDefault();
-        $(this).find('h6').toggleClass('underline-pink');
-    });
-
-
-    // TOGGLE BORDER-BOTTOM in ACCORDION
-
-    $('#accordion h5').click(function (e) {
-        e.preventDefault();
-        ($(this)[0]).toggleClass('.accordion-border');
-        console.log($(this)[0]);
+    // OWL-CAROUSEL
+    
+    // HEADER SLIDER
+    if ($('.owl-carousel').length > 0) {
+        $('.authors-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            items: 1,
+            nav: true,
+            dots: false,
+            navText: ['<', '>']
+        });
     }
-
-    )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // QUESTINS_ANSWERS
-
-
-
+    
+    
+    // FRECKLES SLIDER
+    if ($('.owl-carousel').length > 0) {
+        $('.freckles-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            items: 1,
+            nav: true,
+            dots: false,
+            navText: ['<', '>']
+        });
+    }
+    
+    
+    // GEL SLIDER
+    if ($('.owl-carousel').length > 0) {
+        $('.gel-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            items: 1,
+            nav: true,
+            dots: false,
+            navText: ['<', '>']
+        });
+    }
+    
+    
+    
+    // GIRAFE SLIDER
+    if ($('.owl-carousel').length > 0) {
+        $('.girafe-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            items: 1,
+            nav: true,
+            dots: false,
+            navText: ['<', '>']
+        });
+    }
+    
+    
+    
+    
+    
+    
 
 });
