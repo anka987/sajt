@@ -110,7 +110,10 @@ p.lead {
     line-height: 17px;
 }
 
-
+.error{
+    font-size: 13px !important;
+    padding: 3px 0px 0px 3px;
+}
 
 /***************
 ****HOMEPAGE****
@@ -214,7 +217,6 @@ p.lead {
 .btn {
     border-radius: 0;
     padding: 15px 40px;
-    text-transform: uppercase;
     font-family: 'Gotham-Bold';
     font-size: 12px;
 }
@@ -227,6 +229,7 @@ p.lead {
 .btn-purity-transparent {
     background-color: rgba(255,255,255,0);
     border-color: #000;
+    text-transform: uppercase;
 }
 
 
@@ -736,6 +739,39 @@ p.earn {
 =========================================*/
 
 
+/*======================================
+          ROUTINE START
+=========================================*/
+.routine figure{
+    margin-top: 20px;
+}
+
+.routine h2{
+    font-size: 30px;	
+    letter-spacing: -1.28px;	
+    line-height: 43px;
+}
+
+.routine p{
+    color: #161616;	
+    font-family: 'Gotham-Light';
+    letter-spacing: -0.61px;	
+    line-height: 21px;
+    text-align: center;
+}
+
+.routine label{
+    color: #161616;	
+    font-family: 'Gotham-Light';
+    font-size: 14px;	
+    letter-spacing: -0.7px;	
+    line-height: 21px;
+}
+/*======================================
+          ROUTINE END
+=========================================*/
+
+
 
 /*======================================
         INGREDIENTS / DANDRUFF START
@@ -806,7 +842,119 @@ p.earn {
 
 
 
+/*======================================
+        ORDERS / MY-BOX / POINTS START
+=========================================*/
 
+.orders h3,
+.my-box h3,
+.points h3{
+    font-size: 24px;	
+    letter-spacing: -0.51px;	
+    line-height: 16px;
+}
+
+.orders ul,
+.my-box ul,
+.points ul{
+    list-style: none;
+}
+
+.orders ul li a,
+.my-box ul li a,
+.points ul li a{
+    color: #161616;
+    font-family: 'Gotham-Light';
+    font-size: 14px;	
+    letter-spacing: -0.9px;	
+    line-height: 40px;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.orders ul li a.active,
+.my-box ul li a.active,
+.points ul li a.active{
+    font-weight: bold;
+    border-bottom: 1px solid #F9CED5;
+}
+
+.orders ul li a:before,
+.my-box ul li a:before,
+.points ul li a:before{
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: #F9CED5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+}
+
+.orders ul li:hover a:before,
+.my-box ul li:hover a:before,
+.points ul li:hover a:before{
+    width: 100%;
+}
+
+.orders ul li a:hover,
+.my-box ul li a:hover,
+.points ul li a:hover{
+    font-weight: bold;
+}
+
+.orders thead tr,
+.my-box thead tr,
+.points thead tr{
+    background-color: #F9CED5;
+}
+
+.orders table tr:hover,
+.my-box table tr:hover,
+.points table tr:hover{
+    background-color: rgba(249, 206, 213, 0.1)
+}
+
+.orders thead tr:hover,
+.my-box table tr:hover,
+.points table tr:hover{
+    background-color: #F9CED5;
+}
+
+.orders thead tr th,
+.my-box thead tr th,
+.points thead tr th{
+    color: #161616;	
+    font-family: 'Gotham-Bold';
+    font-size: 14px;	
+    
+}
+
+.orders table td,
+.my-box table td,
+.points table td{
+    color: #161616;	
+    font-family: 'Gotham-Light';
+    font-size: 12px;	
+    letter-spacing: -0.68px;	
+    line-height: 20px;
+}
+
+.orders .table th, 
+.orders .table td,
+.my-box .table th,
+.my-box .table td,
+.points .table th,
+.points .table td{
+    border-bottom: 1px solid #F9CED5 !important;
+    
+}
+/*======================================
+        ORDERS / MY-BOX / POINTS END
+=========================================*/
 
 
 /*======================================

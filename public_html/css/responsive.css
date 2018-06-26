@@ -9,12 +9,21 @@
         padding-right: 25px;
     }
 
+
+    /*======================================
+             SLIDERS START
+    =========================================*/
+
     .authors-slider,
     .freckles-slider,
     .gel-slider,
     .girafe-slider{
         padding: 20px 80px;
     }
+
+    /*======================================
+             SLIDERS END
+    =========================================*/
 
 }
 
@@ -55,6 +64,11 @@
         font-size: 16px;
     }
 
+    .error{
+        font-size: 14px !important;
+        padding: 3px 0px 0px 3px;
+    }
+
     .home-info > div > div > div > div{
         padding: 10px;
         border-right: 1px solid #161616;
@@ -75,7 +89,8 @@
     .sign_up figure,
     .registration fugure,
     .sugestions figure,
-    .leave_comment figure{
+    .leave_comment figure,
+    .routine figure{
         margin-top: 50px;
     }
 
@@ -85,7 +100,8 @@
     .sign_up h2,
     .registration h2,
     .sugestions h2,
-    .leave_comment h2{	
+    .leave_comment h2,
+    .routine h2{	
         font-size: 36px;
     }
 
@@ -139,6 +155,36 @@
             INGREDIENTS / DANDRUFF END
     =========================================*/
 
+    
+    
+    /*======================================
+        ROUTINE START
+    =========================================*/
+    .routine label{
+        font-size: 16px;
+    }
+    /*======================================
+        ROUTINE END
+    =========================================*/
+
+    
+    
+    /*======================================
+        ORDERS / MY-BOX / POINTS START
+    =========================================*/
+    .orders ul li a,
+    .my-box ul li a,
+    .points ul li a{
+        font-size: 16px;
+    }
+
+    /*======================================
+        ORDERS / MY-BOX / POINTS END
+    =========================================*/
+
+
+
+
 }
 
 
@@ -167,7 +213,7 @@
         position: absolute;
         width: 100%;
         left: 0;
-        top: 106.967px;
+        top: 100px;
         background: #fff;
         padding: 20px;
         max-height: calc(100vh - 111px);
@@ -253,6 +299,21 @@
 
 
 
+    /*======================================
+        ORDERS / MY-BOX /POINTS START
+    =========================================*/
+    .orders table td,
+    .my-box table td,
+    .points table td{
+        font-size: 13px;
+        padding: 14px;
+    }
+    /*======================================
+        ORDERS / MY-BOX / POINTS  START
+    =========================================*/
+
+
+    
     /*======================================
             FOOTER START
     =========================================*/
