@@ -9,8 +9,11 @@
         padding-right: 25px;
     }
 
+    .authors-slider {
+    padding: 20px 80px;
+    }
 
-    /*======================================
+ /*======================================
              SLIDERS START
     =========================================*/
 
@@ -25,12 +28,10 @@
              SLIDERS END
     =========================================*/
 
+
 }
 
 @media(min-width:768px){
-    html{
-        font-size: 16px;
-    }
 
     .header-top li{
         display: flex;
@@ -69,15 +70,46 @@
         padding: 3px 0px 0px 3px;
     }
 
+
     .home-info > div > div > div > div{
         padding: 10px;
         border-right: 1px solid #161616;
         border-bottom: none;
         margin: 20px 0;
-    }
+        }
 
     .how-it-function {
         background: #fff url("../img/background-images/bg-img-2.png") no-repeat center 58px;      
+    }
+
+    /*======================================
+        NOVELTY START
+=========================================*/
+
+    .novelty figure {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .novelty article a{
+        display: block;
+    }
+    
+    .novelty figure:hover .novelty-overlay  {
+        height: 55%;
+        opacity: 1;
+    }
+    
+    .novelty .novelty-overlay {
+        display: block;
+        background: rgba(255,255,255,0.85);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        width: 100%;
+        height: 0;
+        transition: ease 0.5s;
     }
 
     /*======================================
@@ -137,54 +169,6 @@
         font-size: 16px;
     }
 
-    /*======================================
-              FORM SECTIONS END
-    =========================================*/ 
-
-
-
-    /*======================================
-        INGREDIENTS / DANDRUFF START
-    =========================================*/
-    .ingredients p,
-    .dandruff p{
-        font-size: 16px;
-    }
-
-    /*======================================
-            INGREDIENTS / DANDRUFF END
-    =========================================*/
-
-    
-    
-    /*======================================
-        ROUTINE START
-    =========================================*/
-    .routine label{
-        font-size: 16px;
-    }
-    /*======================================
-        ROUTINE END
-    =========================================*/
-
-    
-    
-    /*======================================
-        ORDERS / MY-BOX / POINTS START
-    =========================================*/
-    .orders ul li a,
-    .my-box ul li a,
-    .points ul li a{
-        font-size: 16px;
-    }
-
-    /*======================================
-        ORDERS / MY-BOX / POINTS END
-    =========================================*/
-
-
-
-
 }
 
 
@@ -213,7 +197,7 @@
         position: absolute;
         width: 100%;
         left: 0;
-        top: 100px;
+        top: 106.967px;
         background: #fff;
         padding: 20px;
         max-height: calc(100vh - 111px);
@@ -285,6 +269,10 @@
     }
 
 
+
+    .novelty figure:hover .novelty-overlay  {
+        height: 35%;
+    }
 
     /*======================================
         INGREDIENTS / DANDRUFF START

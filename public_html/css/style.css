@@ -1,6 +1,10 @@
 html{
-    font-size: 14px;
+    font-size: 16px;
     color: #161616;
+}
+
+a {
+    font-size: 14px;
 }
 
 body{
@@ -9,7 +13,10 @@ body{
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Gotham-Bold';
-    color: #161616;
+}
+h2 {
+    margin-bottom: 12px;
+    font-size: 36px;
 }
 
 img{
@@ -41,10 +48,6 @@ form button:focus{
 
 .font-bold{
     font-family: 'Gotham-Bold';
-}
-
-.text-bold{
-    font-weight: bold;
 }
 
 .bg-purity{
@@ -79,6 +82,34 @@ ol, ul, dl {
 
 p.lead {
     margin-bottom: 30px;
+}
+
+.bor-bottom {
+    border-bottom: 1px solid #000;
+}
+
+.b-strike {
+    position: relative;
+}
+
+.b-strike a{
+    position: relative;
+    z-index: 100;
+}
+
+.b-strike:after {
+position: absolute;
+content: '';
+width: 100%;
+height: 1px;
+background: #000;
+left: 0;
+top: 50%;
+z-index: 5;
+}
+
+figure {
+    margin: 0;
 }
 
 .form-control{
@@ -209,14 +240,14 @@ p.lead {
     order: -1;
 }
 
-
 /*======================================
         BUTTONS
 =========================================*/
 
 .btn {
     border-radius: 0;
-    padding: 15px 40px;
+    padding: 15px 30px;
+    text-transform: uppercase;
     font-family: 'Gotham-Bold';
     font-size: 12px;
 }
@@ -226,20 +257,29 @@ p.lead {
     border-color: #000;
 }
 
-.btn-purity-transparent {
-    background-color: rgba(255,255,255,0);
+.btn-purity-white-narrow {
+    background-color: #fff;
     border-color: #000;
-    text-transform: uppercase;
+    padding: 15px 15px;
 }
 
+.btn-purity-transparent {
+    background-color: none;
+    border-color: #000;
+}
 
 /*======================================
-        SLIDERS START
+        HEADER SLIDER
 =========================================*/
-.main-slider-wrapper{
+.main-slider-wrapper {
     background: #fff url("../img/slider-img.png") no-repeat center center;
     background-size: cover; 
     height: 500px;
+}
+
+.authors-slider {
+    background-color: rgba(255,255,255,0.85);
+    padding: 20px 60px;
 }
 
 .freckles-wrapper{
@@ -268,19 +308,33 @@ p.lead {
     padding: 20px 60px;
 }
 
-.owl-prev {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
+.authors-slider .owl-prev {
+position: absolute;
+top: 50%;
+left: 15px;
+transform: translateY(-50%);
 }
 
-.owl-next {
+.authors-slider .owl-next {
     position: absolute;
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
-}
+    }
+
+    .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+    
+    .owl-next {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+    }
 
 .owl-carousel .owl-nav {
     margin: 0;
@@ -303,9 +357,69 @@ p.lead {
     background: none;
     color: #F9CED5;
 }
+
 /*======================================
-        SLIDERS END
+        CLASSIC SLIDER
 =========================================*/
+
+.classic-slider-wrapper {
+    background: #fff url("../img/slider-classic.png") no-repeat center center;
+    background-size: cover; 
+    height: 500px;
+}
+
+.classic-slider-wrapper a {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/*======================================
+        BRANDS SLIDER
+=========================================*/
+
+.brands-slider .owl-nav {
+    position: relative;
+}
+
+.brands-slider .owl-prev {
+    position: absolute !important;
+    bottom: 150px;
+    left: 15px;
+}
+
+.brands-slider .owl-next {
+    position: absolute !important;
+    bottom: 150px;
+    right: 15px;
+}
+
+.brands-slider li {
+    min-height: 100px;
+}
+
+.brands-slider li img {
+    width: auto !important;
+}
+
+/*======================================
+        SHOP HEADER
+=========================================*/
+
+.shop-header h3 {
+text-transform: uppercase;
+letter-spacing: 0.2em;
+}
+
+/*======================================
+        SHOP SUN CARE HEADER
+=========================================*/
+
+.shop-sun-care-header {
+    background: url("../img/shop-header/Group_7.png") no-repeat center center;
+    background-size: cover;
+    height: 400px;
+}
 
 
 /*======================================
@@ -313,13 +427,13 @@ p.lead {
 =========================================*/
 
 .home-info > div > div > div > div{
-    padding: 20px 0;
-    border-bottom: 1px solid #161616;
+padding: 20px 0;
+border-bottom: 1px solid #161616;
 }
 
 .home-info > div > div > div:last-child > div{
     border-right: none;
-}
+    }
 
 .home-info a{
     display: block;
@@ -399,11 +513,118 @@ p.earn {
 
 .surprise h5 {
     text-transform: uppercase;
-    margin: 25px 0;
+    margin: 15px 0;
+    display: inline-block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    padding: 10px 0;
+}
+
+.surprise figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.surprise a {
+    display: block;
+}
+.surprise button {
+    display: block;
+    margin: 0 auto;
+}
+
+.surprise a:hover .surprise-overlay {
+    opacity: 1;
+}
+
+.surprise a:hover h5 {
+    border-bottom: 1px solid rgba(240, 100, 5, 1);
+}
+
+.surprise .surprise-overlay {
+    display: block;
+    background: rgba(255,255,255,0.85);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: ease 0.5s;
+}
+
+/*======================================
+        NOVELTY START
+=========================================*/
+
+.novelty figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.novelty article a{
+    display: block;
+}
+
+
+.novelty .novelty-overlay {
+    display: block;
+    background: rgba(255,255,255,0.85);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    transition: ease 0.5s;
+}
+
+.novelty span {
+    font-weight: bold;
+}
+
+.add-to-basket:hover {
+    color: #ffc7d2;
+}
+
+
+/*======================================
+        CARE TYPE START
+=========================================*/
+.care-type img {
+    width: 100%;
+    transition: ease-in-out 0.6s;
+}
+
+.care-type figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.care-type a:hover img {
+    transform: scale(1.05);
 }
 
 
 
+ .care-type-overlay {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 165px;
+    height: auto;
+padding: 85px 10px 23px 10px;
+}
+
+.care-type .row div:first-of-type .care-type-overlay {
+    background:#fff url('../img/classic/moderan.png') no-repeat center 25px;
+} 
+.care-type .row div:nth-of-type(2) .care-type-overlay {
+    background:#fff url('../img/classic/classic.png') no-repeat center 25px;
+}
+.care-type .row div:nth-of-type(3) .care-type-overlay {
+    background:#fff url('../img/classic/avantu.png') no-repeat center 25px;
+}
 
 
 /*======================================
